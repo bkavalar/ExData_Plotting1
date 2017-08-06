@@ -22,5 +22,5 @@ subsetData$DateTime <- as.POSIXct(paste(as.character(subsetData$Date), subsetDat
                              ylab = "Global Active Power (kilowatts)")
 
 #create png file of plot and save to drive
-dev.copy(png, file = "plot2.png") 
+dev.copy(png, file = "plot2.png" , width = 480, height = 480) 
 dev.off()

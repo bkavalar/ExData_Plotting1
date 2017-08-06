@@ -50,5 +50,5 @@ plot(Global_reactive_power ~ DateTime, subsetData, type = "l", xlab = "datetime"
 })
 
 #create png file of plot4 and save to drive
-dev.copy(png, file = "plot4.png") 
+dev.copy(png, file = "plot4.png", width = 480, height = 480) 
 dev.off()

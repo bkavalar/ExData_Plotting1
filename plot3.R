@@ -26,5 +26,5 @@ subsetData$DateTime <- as.POSIXct(paste(as.character(subsetData$Date), subsetDat
 legend("topright", pch = "_", col = c("black", "blue", "red"), legend = c("Sub_metering_1   ", "Sub_metering_2   ",
                                                                         "Sub_metering_3   "))
 #create png file of plot and save to drive
-dev.copy(png, file = "plot3.png") 
+dev.copy(png, file = "plot3.png",  width = 480, height = 480) 
 dev.off()

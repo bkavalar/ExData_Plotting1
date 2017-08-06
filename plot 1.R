@@ -19,5 +19,5 @@ subsetData <- energyData[energyData$Date == "2007-02-01" | energyData$Date == "2
 hist(subsetData$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 
 #create png file of histogram plot1 and save to drive
-dev.copy(png, file = "plot1.png") 
+dev.copy(png, file = "plot1.png", width = 480, height = 480) 
 dev.off()
